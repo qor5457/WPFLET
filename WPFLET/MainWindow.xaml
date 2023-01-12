@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:WPFLET"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="450" Background="Black">
+    
     <Grid Margin="80">
         <Grid.RowDefinitions>
             <RowDefinition Height="200"/>
@@ -16,8 +17,7 @@
             <RowDefinition Height="15"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        
-        <Image Grid.Row="0" Grid.Column="0"></Image>
+        <Image Grid.Row="1" Grid.Column="0"></Image>
         <Button Grid.Row="2" Grid.Column="0"></Button>
         <Button Grid.Row="4" Grid.Column="0"></Button>
         <Button Grid.Row="6" Grid.Column="0"></Button>

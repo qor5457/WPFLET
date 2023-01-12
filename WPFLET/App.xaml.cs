@@ -19,22 +19,14 @@ namespace WPFLET
     /// </summary>
     public partial class App : Application
     {
-        public App()
+        protected override void OnStartup(StartupEventArgs e)
         {
-            Services = ConfigureServices();
-
-            this.InitializeComponent();
-        }
-        
-        public new static App Current => (App)Application.Current;
-        
-        public IServiceProvider Services { get; }
-        
-        private static IServiceProvider ConfigureServices()
-        {
-            var services = new ServiceCollection();
-            
-            return services.BuildServiceProvider();
+            base.OnStartup(e);
+            //var window = new MainWindow();
+            //window.Show();
+            Ioc.Default.ConfigureServices(new ServiceCollection()
+                .AddTransient<MainViewModel>()
+                .BuildServiceProvider());
         }
     }
 }
