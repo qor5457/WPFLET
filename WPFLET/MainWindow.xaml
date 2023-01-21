@@ -18,8 +18,8 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <Image Grid.Row="1" Grid.Column="0"></Image>
-        <Button Grid.Row="2" Grid.Column="0"></Button>
-        <Button Grid.Row="4" Grid.Column="0"></Button>
-        <Button Grid.Row="6" Grid.Column="0"></Button>
+        <Button Grid.Row="2" Grid.Column="0" Content="melsce" Background="White" BorderBrush="Wheat"></Button>
+        <Button Grid.Row="4" Grid.Column="0" Content="socket" Background="White" BorderBrush="Wheat"></Button>
+        <Button Grid.Row="6" Grid.Column="0" Content="Serial" Background="White" BorderBrush="Wheat"></Button>
     </Grid>
 </Window>

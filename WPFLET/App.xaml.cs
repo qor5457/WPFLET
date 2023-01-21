@@ -22,8 +22,9 @@ namespace WPFLET
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            //var window = new MainWindow();
-            //window.Show();
+            var window = new MainWindow();
+            window.Show();
+
             Ioc.Default.ConfigureServices(new ServiceCollection()
                 .AddTransient<MainViewModel>()
                 .BuildServiceProvider());

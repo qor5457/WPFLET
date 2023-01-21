@@ -24,6 +24,7 @@ namespace WPFLET
         public MainWindow()
         {
             InitializeComponent();
+            this.DataContext =Ioc.Default.GetService<MainViewModel>();
         }
     }
 }
