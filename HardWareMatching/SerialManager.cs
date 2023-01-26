@@ -7,5 +7,7 @@
         {
 
         }
+
+        public void close() { }
     }
 }
