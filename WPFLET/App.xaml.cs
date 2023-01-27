@@ -9,6 +9,7 @@ using System.Security.Authentication.ExtendedProtection;
 using System.Threading.Tasks;
 using System.Windows;
 using CommunityToolkit.Mvvm.DependencyInjection;
+using HardWareMatching;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 
@@ -22,8 +23,9 @@ namespace WPFLET
         protected override void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
-            
+
             Ioc.Default.ConfigureServices(new ServiceCollection()
+                .AddSingleton<SerialManager>()
                 .AddTransient<MainViewModel>()
                 .BuildServiceProvider());
         }
