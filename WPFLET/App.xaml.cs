@@ -25,8 +25,7 @@ namespace WPFLET
             base.OnStartup(e);
 
             Ioc.Default.ConfigureServices(new ServiceCollection()
-                .AddSingleton<ISerialCommunicator, SerialCommunicator>()
-                .AddTransient<MainViewModel>()
+                .AddSingleton<MainViewModel>()
                 .BuildServiceProvider());
         }
     }
